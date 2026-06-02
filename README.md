@@ -1,16 +1,17 @@
-## Hi there 👋
+# ¡Hola! Soy Felipe 👋
 
-<!--
-**felipedaw1/felipedaw1** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Soy estudiante de Desarrollo de Aplicaciones Multiplataforma (DAM) y estoy aprendiendo a desarrollar aplicaciones y proyectos de software, mientras sigo mejorando mis conocimientos técnicos. También tengo formación como Técnico en Transporte y Logística, lo que me ha aportado una visión más estructurada y orientada a procesos.
 
-Here are some ideas to get you started:
+## Tecnologías que estoy aprendiendo
+- HTML5
+- CSS3
+- Java
+- Python
+- Angular
+- Git y GitHub
+- Bases de datos
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Mi portfolio
+Puedes ver mi portfolio personal aquí:
+
+[Ver portfolio](https://felipedaw1.github.io/mi-portfolio/)
