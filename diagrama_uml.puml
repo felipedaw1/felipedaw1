@@ -1,0 +1,80 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Usuario {
+  - idUsuario: int
+  - nombreUsuario: String
+  - email: String
+  - password: String
+  --
+  + getIdUsuario(): int
+  + setIdUsuario(idUsuario: int): void
+  + getNombreUsuario(): String
+  + setNombreUsuario(nombreUsuario: String): void
+  + getEmail(): String
+  + setEmail(email: String): void
+  + getPassword(): String
+  + setPassword(password: String): void
+}
+
+class Categoria {
+  - idCategoria: int
+  - nombre: String
+  - descripcion: String
+  --
+  + getIdCategoria(): int
+  + setIdCategoria(idCategoria: int): void
+  + getNombre(): String
+  + setNombre(nombre: String): void
+  + getDescripcion(): String
+  + setDescripcion(descripcion: String): void
+}
+
+class Estado {
+  - idEstado: int
+  - nombre: String
+  - descripcion: String
+  --
+  + getIdEstado(): int
+  + setIdEstado(idEstado: int): void
+  + getNombre(): String
+  + setNombre(nombre: String): void
+  + getDescripcion(): String
+  + setDescripcion(descripcion: String): void
+}
+
+class Tarea {
+  - idTarea: int
+  - titulo: String
+  - descripcion: String
+  - fechaCreacion: LocalDate
+  - fechaLimite: LocalDate
+  - observaciones: String
+  - usuario: Usuario
+  - categoria: Categoria
+  - estado: Estado
+  --
+  + getIdTarea(): int
+  + setIdTarea(idTarea: int): void
+  + getTitulo(): String
+  + setTitulo(titulo: String): void
+  + getDescripcion(): String
+  + setDescripcion(descripcion: String): void
+  + getFechaCreacion(): LocalDate
+  + setFechaCreacion(fechaCreacion: LocalDate): void
+  + getFechaLimite(): LocalDate
+  + setFechaLimite(fechaLimite: LocalDate): void
+  + getObservaciones(): String
+  + setObservaciones(observaciones: String): void
+  + getUsuario(): Usuario
+  + setUsuario(usuario: Usuario): void
+  + getCategoria(): Categoria
+  + setCategoria(categoria: Categoria): void
+  + getEstado(): Estado
+  + setEstado(estado: Estado): void
+}
+
+Usuario "1" --> "0..*" Tarea : tiene
+Categoria "1" --> "0..*" Tarea : agrupa
+Estado "1" --> "0..*" Tarea : asociado a
+@enduml

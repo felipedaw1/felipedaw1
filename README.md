@@ -15,3 +15,15 @@ Soy estudiante de Desarrollo de Aplicaciones Multiplataforma (DAM) y estoy apren
 Puedes ver mi portfolio personal aquí:
 
 [Ver portfolio](https://felipedaw1.github.io/mi-portfolio/)
+
+## Diagrama UML de Clases
+A continuación se presenta el diagrama UML de clases generado para las clases `Usuario`, `Categoria`, `Estado` y `Tarea`:
+
+![Diagrama UML de Clases](diagrama_uml.png)
+
+### Archivos del diagrama
+- [Código fuente de PlantUML (diagrama_uml.puml)](diagrama_uml.puml)
+- [Código fuente de Graphviz DOT (diagrama_uml.dot)](diagrama_uml.dot)
+- [Diagrama en formato vectorial SVG (diagrama_uml.svg)](diagrama_uml.svg)
+- [Diagrama en formato de imagen PNG (diagrama_uml.png)](diagrama_uml.png)
+

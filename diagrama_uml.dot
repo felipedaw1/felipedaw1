@@ -1,0 +1,33 @@
+digraph G {
+    fontname = "Helvetica"
+    fontsize = 12
+    rankdir = TB
+    splines = true
+
+    node [
+        fontname = "Helvetica"
+        fontsize = 10
+        shape = "record"
+        style = "filled"
+        fillcolor = "#Fcfcfc"
+        color = "#2E4053"
+    ]
+
+    edge [
+        fontname = "Helvetica"
+        fontsize = 10
+        color = "#2E4053"
+    ]
+
+    Usuario [label = "{Usuario| - idUsuario : int\l - nombreUsuario : String\l - email : String\l - password : String\l| + getIdUsuario() : int\l + setIdUsuario(int idUsuario) : void\l + getNombreUsuario() : String\l + setNombreUsuario(String nombreUsuario) : void\l + getEmail() : String\l + setEmail(String email) : void\l + getPassword() : String\l + setPassword(String password) : void\l}"]
+    
+    Categoria [label = "{Categoria| - idCategoria : int\l - nombre : String\l - descripcion : String\l| + getIdCategoria() : int\l + setIdCategoria(int idCategoria) : void\l + getNombre() : String\l + setNombre(String nombre) : void\l + getDescripcion() : String\l + setDescripcion(String descripcion) : void\l}"]
+    
+    Estado [label = "{Estado| - idEstado : int\l - nombre : String\l - descripcion : String\l| + getIdEstado() : int\l + setIdEstado(int idEstado) : void\l + getNombre() : String\l + setNombre(String nombre) : void\l + getDescripcion() : String\l + setDescripcion(String descripcion) : void\l}"]
+    
+    Tarea [label = "{Tarea| - idTarea : int\l - titulo : String\l - descripcion : String\l - fechaCreacion : LocalDate\l - fechaLimite : LocalDate\l - observaciones : String\l - usuario : Usuario\l - categoria : Categoria\l - estado : Estado\l| + getIdTarea() : int\l + setIdTarea(int idTarea) : void\l + getTitulo() : String\l + setTitulo(String titulo) : void\l + getDescripcion() : String\l + setDescripcion(String descripcion) : void\l + getFechaCreacion() : LocalDate\l + setFechaCreacion(LocalDate fechaCreacion) : void\l + getFechaLimite() : LocalDate\l + setFechaLimite(LocalDate fechaLimite) : void\l + getObservaciones() : String\l + setObservaciones(String observaciones) : void\l + getUsuario() : Usuario\l + setUsuario(Usuario usuario) : void\l + getCategoria() : Categoria\l + setCategoria(Categoria categoria) : void\l + getEstado() : Estado\l + setEstado(Estado estado) : void\l}"]
+
+    Usuario -> Tarea [arrowhead = "vee", headlabel = "0..*", taillabel = "1", label = "tiene", labeldistance=3.0, labelangle=-15]
+    Categoria -> Tarea [arrowhead = "vee", headlabel = "0..*", taillabel = "1", label = "agrupa", labeldistance=3.0, labelangle=15]
+    Estado -> Tarea [arrowhead = "vee", headlabel = "0..*", taillabel = "1", label = "asociado a", labeldistance=3.0, labelangle=20]
+}
