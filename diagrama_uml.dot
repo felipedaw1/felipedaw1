@@ -9,14 +9,14 @@ digraph G {
         fontsize = 10
         shape = "record"
         style = "filled"
-        fillcolor = "#Fcfcfc"
-        color = "#2E4053"
+        fillcolor = "#fcfcfc"
+        color = "#2e4053"
     ]
 
     edge [
         fontname = "Helvetica"
         fontsize = 10
-        color = "#2E4053"
+        color = "#2e4053"
     ]
 
     Usuario [label = "{Usuario| - idUsuario : int\l - nombreUsuario : String\l - email : String\l - password : String\l| + getIdUsuario() : int\l + setIdUsuario(int idUsuario) : void\l + getNombreUsuario() : String\l + setNombreUsuario(String nombreUsuario) : void\l + getEmail() : String\l + setEmail(String email) : void\l + getPassword() : String\l + setPassword(String password) : void\l}"]
